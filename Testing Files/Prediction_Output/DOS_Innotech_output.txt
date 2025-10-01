@@ -1,0 +1,39 @@
+(.venv) PS C:\Users\Dharam Patel\Desktop\Final_IDS> python Prediction.py innotech_a.csv
+Loading model and preprocessors...
+Model loaded successfully on device: cpu
+Number of classes: 5
+Class names: ['BENIGN', 'DDoS', 'DoS', 'Other', 'PortScan']
+Loading data from: innotech_a.csv
+Data shape: (787, 78)
+Preprocessing data...
+Creating graph with k=10 neighbors...
+C:\Users\Dharam Patel\Desktop\Final_IDS\Prediction.py:107: UserWarning: Creating a tensor from a list of numpy.ndarrays is extremely slow. Please consider converting the list to a single numpy.ndarray with numpy.array() before converting to a tensor. (Triggered internally at C:\actions-runner\_work\pytorch\pytorch\pytorch\torch\csrc\utils\tensor_new.cpp:256.)
+  edge_index = torch.tensor([A.row, A.col], dtype=torch.long)
+Graph created: 787 nodes, 3935 undirected edges
+Making predictions...
+
+Prediction Summary:
+Total samples: 787
+
+Predicted label distribution:
+BENIGN    648
+DoS       139
+Name: count, dtype: int64
+
+Average confidence: 0.7378
+Min confidence: 0.4846
+Max confidence: 0.9715
+
+Results saved to: predictions_innotech_a.csv
+
+First 5 predictions:
+  Predicted_Label  Confidence
+0             DoS    0.644575
+1             DoS    0.562466
+2             DoS    0.569277
+3          BENIGN    0.787933
+4             DoS    0.590777
+
+Detailed prediction statistics:
+DoS: 139 samples, avg confidence: 0.5778
+BENIGN: 648 samples, avg confidence: 0.7721

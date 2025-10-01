@@ -1,0 +1,134 @@
+Loading merged dataset...
+Dataset shape: (2830743, 79)
+New class counts:
+Label_grp
+BENIGN      2273097
+DoS          252661
+PortScan     158930
+DDoS         128027
+Other         18028
+Name: count, dtype: int64
+After undersampling:
+Label_grp
+BENIGN      50000
+DDoS        50000
+DoS         50000
+PortScan    50000
+Other       18028
+Name: count, dtype: int64
+Preprocessing data...
+Creating graph structure...
+C:\Users\Dharam Patel\Desktop\Final_IDS\Model.py:115: UserWarning: Creating a tensor from a list of numpy.ndarrays is extremely slow. Please consider converting the list to a single numpy.ndarray with numpy.array() before converting to a tensor. (Triggered internally at C:\actions-runner\_work\pytorch\pytorch\pytorch\torch\csrc\utils\tensor_new.cpp:256.)
+  edge_index = torch.tensor([A.row, A.col], dtype=torch.long)
+Graph: 218028 nodes, 1090140 undirected edges
+Using device: cpu
+Starting training...
+Epoch 001 | Loss 1.7337 | TrainAcc 0.1884 | TestAcc 0.1877
+Epoch 002 | Loss 1.3902 | TrainAcc 0.4971 | TestAcc 0.4936
+Epoch 003 | Loss 1.2252 | TrainAcc 0.6363 | TestAcc 0.6327
+Epoch 004 | Loss 1.0984 | TrainAcc 0.6562 | TestAcc 0.6539
+Epoch 005 | Loss 0.9736 | TrainAcc 0.6837 | TestAcc 0.6828
+Epoch 006 | Loss 0.8552 | TrainAcc 0.7306 | TestAcc 0.7291
+Epoch 007 | Loss 0.7613 | TrainAcc 0.7388 | TestAcc 0.7382
+Epoch 008 | Loss 0.6873 | TrainAcc 0.7445 | TestAcc 0.7435
+Epoch 009 | Loss 0.6118 | TrainAcc 0.8190 | TestAcc 0.8171
+Epoch 010 | Loss 0.5422 | TrainAcc 0.8233 | TestAcc 0.8213
+Epoch 011 | Loss 0.4880 | TrainAcc 0.8363 | TestAcc 0.8355
+Epoch 012 | Loss 0.4449 | TrainAcc 0.8722 | TestAcc 0.8711
+Epoch 013 | Loss 0.4053 | TrainAcc 0.8826 | TestAcc 0.8817
+Epoch 014 | Loss 0.3786 | TrainAcc 0.8831 | TestAcc 0.8838
+Epoch 015 | Loss 0.3576 | TrainAcc 0.9054 | TestAcc 0.9050
+Epoch 016 | Loss 0.3398 | TrainAcc 0.9094 | TestAcc 0.9089
+Epoch 017 | Loss 0.3234 | TrainAcc 0.9199 | TestAcc 0.9199
+Epoch 018 | Loss 0.3091 | TrainAcc 0.9256 | TestAcc 0.9262
+Epoch 019 | Loss 0.2919 | TrainAcc 0.9356 | TestAcc 0.9365
+Epoch 020 | Loss 0.2755 | TrainAcc 0.9225 | TestAcc 0.9224
+Epoch 021 | Loss 0.2661 | TrainAcc 0.9236 | TestAcc 0.9227
+Epoch 022 | Loss 0.2571 | TrainAcc 0.9253 | TestAcc 0.9247
+Epoch 023 | Loss 0.2463 | TrainAcc 0.9250 | TestAcc 0.9248
+Epoch 024 | Loss 0.2389 | TrainAcc 0.9428 | TestAcc 0.9436
+Epoch 025 | Loss 0.2300 | TrainAcc 0.9459 | TestAcc 0.9468
+Epoch 026 | Loss 0.2163 | TrainAcc 0.9351 | TestAcc 0.9349
+Epoch 027 | Loss 0.2051 | TrainAcc 0.9324 | TestAcc 0.9316
+Epoch 028 | Loss 0.1962 | TrainAcc 0.9411 | TestAcc 0.9407
+Epoch 029 | Loss 0.1895 | TrainAcc 0.9470 | TestAcc 0.9463
+Epoch 030 | Loss 0.1837 | TrainAcc 0.9501 | TestAcc 0.9501
+Epoch 031 | Loss 0.1776 | TrainAcc 0.9514 | TestAcc 0.9518
+Epoch 032 | Loss 0.1748 | TrainAcc 0.9505 | TestAcc 0.9512
+Epoch 033 | Loss 0.1711 | TrainAcc 0.9537 | TestAcc 0.9552
+Epoch 034 | Loss 0.1659 | TrainAcc 0.9518 | TestAcc 0.9527
+Epoch 035 | Loss 0.1610 | TrainAcc 0.9524 | TestAcc 0.9531
+Epoch 036 | Loss 0.1567 | TrainAcc 0.9565 | TestAcc 0.9575
+Epoch 037 | Loss 0.1537 | TrainAcc 0.9531 | TestAcc 0.9537
+Epoch 038 | Loss 0.1501 | TrainAcc 0.9554 | TestAcc 0.9562
+Epoch 039 | Loss 0.1471 | TrainAcc 0.9565 | TestAcc 0.9573
+Epoch 040 | Loss 0.1444 | TrainAcc 0.9544 | TestAcc 0.9556
+Epoch 041 | Loss 0.1415 | TrainAcc 0.9586 | TestAcc 0.9603
+Epoch 042 | Loss 0.1389 | TrainAcc 0.9605 | TestAcc 0.9620
+Epoch 043 | Loss 0.1359 | TrainAcc 0.9603 | TestAcc 0.9617
+Epoch 044 | Loss 0.1334 | TrainAcc 0.9631 | TestAcc 0.9643
+Epoch 045 | Loss 0.1309 | TrainAcc 0.9613 | TestAcc 0.9619
+Epoch 046 | Loss 0.1283 | TrainAcc 0.9643 | TestAcc 0.9655
+Epoch 047 | Loss 0.1259 | TrainAcc 0.9639 | TestAcc 0.9648
+Epoch 048 | Loss 0.1239 | TrainAcc 0.9643 | TestAcc 0.9651
+Epoch 049 | Loss 0.1220 | TrainAcc 0.9655 | TestAcc 0.9666
+Epoch 050 | Loss 0.1202 | TrainAcc 0.9646 | TestAcc 0.9656
+Epoch 051 | Loss 0.1180 | TrainAcc 0.9661 | TestAcc 0.9670
+Epoch 052 | Loss 0.1162 | TrainAcc 0.9647 | TestAcc 0.9657
+Epoch 053 | Loss 0.1143 | TrainAcc 0.9664 | TestAcc 0.9673
+Epoch 054 | Loss 0.1125 | TrainAcc 0.9661 | TestAcc 0.9671
+Epoch 055 | Loss 0.1106 | TrainAcc 0.9670 | TestAcc 0.9681
+Epoch 056 | Loss 0.1090 | TrainAcc 0.9668 | TestAcc 0.9682
+Epoch 057 | Loss 0.1074 | TrainAcc 0.9677 | TestAcc 0.9689
+Epoch 058 | Loss 0.1057 | TrainAcc 0.9679 | TestAcc 0.9689
+Epoch 059 | Loss 0.1042 | TrainAcc 0.9687 | TestAcc 0.9698
+Epoch 060 | Loss 0.1026 | TrainAcc 0.9701 | TestAcc 0.9713
+Epoch 061 | Loss 0.1019 | TrainAcc 0.9716 | TestAcc 0.9728
+Epoch 062 | Loss 0.1060 | TrainAcc 0.9661 | TestAcc 0.9670
+Epoch 063 | Loss 0.1112 | TrainAcc 0.9759 | TestAcc 0.9770
+Epoch 064 | Loss 0.1169 | TrainAcc 0.9590 | TestAcc 0.9607
+Epoch 065 | Loss 0.0984 | TrainAcc 0.9713 | TestAcc 0.9722
+Epoch 066 | Loss 0.1159 | TrainAcc 0.9776 | TestAcc 0.9785
+Epoch 067 | Loss 0.1094 | TrainAcc 0.9650 | TestAcc 0.9665
+Epoch 068 | Loss 0.1096 | TrainAcc 0.9647 | TestAcc 0.9661
+Epoch 069 | Loss 0.1020 | TrainAcc 0.9781 | TestAcc 0.9797
+Epoch 070 | Loss 0.0999 | TrainAcc 0.9774 | TestAcc 0.9789
+Epoch 071 | Loss 0.1018 | TrainAcc 0.9670 | TestAcc 0.9680
+Epoch 072 | Loss 0.0997 | TrainAcc 0.9672 | TestAcc 0.9682
+Epoch 073 | Loss 0.0959 | TrainAcc 0.9794 | TestAcc 0.9807
+Epoch 074 | Loss 0.0929 | TrainAcc 0.9786 | TestAcc 0.9799
+Epoch 075 | Loss 0.0944 | TrainAcc 0.9687 | TestAcc 0.9700
+Epoch 076 | Loss 0.0923 | TrainAcc 0.9703 | TestAcc 0.9717
+Epoch 077 | Loss 0.0908 | TrainAcc 0.9786 | TestAcc 0.9798
+Epoch 078 | Loss 0.0878 | TrainAcc 0.9769 | TestAcc 0.9778
+Epoch 079 | Loss 0.0888 | TrainAcc 0.9719 | TestAcc 0.9732
+Epoch 080 | Loss 0.0863 | TrainAcc 0.9736 | TestAcc 0.9748
+Epoch 081 | Loss 0.0867 | TrainAcc 0.9783 | TestAcc 0.9797
+Epoch 082 | Loss 0.0837 | TrainAcc 0.9757 | TestAcc 0.9768
+Epoch 083 | Loss 0.0852 | TrainAcc 0.9738 | TestAcc 0.9749
+Early stopping.
+Classification Report:
+              precision    recall  f1-score   support
+
+      BENIGN       0.99      0.91      0.95     10000
+        DDoS       0.98      1.00      0.99     10000
+         DoS       0.98      0.99      0.99     10000
+       Other       0.90      0.98      0.94      3606
+    PortScan       0.99      1.00      0.99     10000
+
+    accuracy                           0.98     43606
+   macro avg       0.97      0.98      0.97     43606
+weighted avg       0.98      0.98      0.98     43606
+
+Saving model and preprocessors...
+Model training completed and saved!
+Best test accuracy: 0.9807
+
+Saved files:
+- gcn_model.pth (model weights)
+- gcn_model_complete.pth (complete model)
+- scaler.pkl (feature scaler)
+- label_encoder.pkl (label encoder)
+- model_metadata.pkl (model metadata)
+
+Process finished with exit code 0

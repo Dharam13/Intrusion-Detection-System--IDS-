@@ -1,0 +1,37 @@
+(.venv) PS C:\Users\Dharam Patel\Desktop\IDS> python predict.py NormalT_a.csv
+Loading model and preprocessors...
+Model loaded successfully on device: cpu
+Number of classes: 5
+Class names: ['BENIGN', 'DDoS', 'DoS', 'Other', 'PortScan']
+Loading data from: NormalT_a.csv
+Data shape: (81, 78)
+Preprocessing data...
+Creating graph with k=10 neighbors...
+C:\Users\Dharam Patel\Desktop\IDS\predict.py:97: UserWarning: Creating a tensor from a list of numpy.ndarrays is extremely slow. Please consider converting the list to a single numpy.ndarray with numpy.array() before converting to a tensor. (Triggered internally at C:\actions-runner\_work\pytorch\pytorch\pytorch\torch\csrc\utils\tensor_new.cpp:256.)
+  edge_index = torch.tensor([A.row, A.col], dtype=torch.long)
+Graph created: 81 nodes, 405 undirected edges
+Making predictions...
+
+Prediction Summary:
+Total samples: 81
+
+Predicted label distribution:
+BENIGN    81
+Name: count, dtype: int64
+
+Average confidence: 0.9808
+Min confidence: 0.9224
+Max confidence: 0.9998
+
+Results saved to: predictions_NormalT_a.csv
+
+First 5 predictions:
+  Predicted_Label  Confidence
+0          BENIGN    0.999109
+1          BENIGN    0.986894
+2          BENIGN    0.998922
+3          BENIGN    0.987449
+4          BENIGN    0.987440
+
+Detailed prediction statistics:
+BENIGN: 81 samples, avg confidence: 0.9808

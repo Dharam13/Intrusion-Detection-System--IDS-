@@ -1,0 +1,40 @@
+(.venv) PS C:\Users\Dharam Patel\Desktop\IDS> python predict.py dos_7_fixed.csv
+Loading model and preprocessors...
+Model loaded successfully on device: cpu
+Number of classes: 5
+Class names: ['BENIGN', 'DDoS', 'DoS', 'Other', 'PortScan']
+Loading data from: dos_7_fixed.csv
+Data shape: (82, 84)
+Preprocessing data...
+Warning: Missing features: ['CWE Flag Count', 'ECE Flag Count', 'Fwd Header Length.1', 'Subflow Fwd Packets', 'Subflow Fwd Bytes', 'Subflow Bwd Packets', 'Subflow Bwd Bytes']
+Creating graph with k=10 neighbors...
+C:\Users\Dharam Patel\Desktop\IDS\predict.py:97: UserWarning: Creating a tensor from a list of numpy.ndarrays is extremely slow. Please consider converting the list to a single numpy.ndarray with numpy.array() before converting to a tensor. (Triggered internally at C:\actions-runner\_work\pytorch\pytorch\pytorch\torch\csrc\utils\tensor_new.cpp:256.)
+  edge_index = torch.tensor([A.row, A.col], dtype=torch.long)
+Graph created: 82 nodes, 410 undirected edges
+Making predictions...
+
+Prediction Summary:
+Total samples: 82
+
+Predicted label distribution:
+BENIGN    69
+DDoS      13
+Name: count, dtype: int64
+
+Average confidence: 0.9705
+Min confidence: 0.6675
+Max confidence: 1.0000
+
+Results saved to: predictions_dos_7_fixed.csv
+
+First 5 predictions:
+  Predicted_Label  Confidence
+0          BENIGN    0.999758
+1          BENIGN    0.999999
+2          BENIGN    0.999854
+3          BENIGN    0.999584
+4          BENIGN    0.993824
+
+Detailed prediction statistics:
+BENIGN: 69 samples, avg confidence: 0.9891
+DDoS: 13 samples, avg confidence: 0.8720
